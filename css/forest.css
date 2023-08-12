@@ -1,0 +1,84 @@
+* {
+    padding: 0xp;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/466/269/original/nature-outdoor-forest-background-free-vector.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-list {
+    display: flex;
+    flex-wrap: wrap;
+    container-type: inline-size;
+    resize: horizontal;
+    overflow: auto;
+}
+
+.card-list__item {
+    width: 100%;
+}
+
+@container (min-width: 600px) {
+    .card-list__item {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+.card {
+    color: white;
+    background-color: rgb(0, 0, 0, 0.0);
+    border-radius: 16px;
+    padding: 1.5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.card:hover{
+    background-color: 	rgb(9,75,101, 1);
+}
+
+.card__title {
+    font-size: 36px;
+    text-align: center;
+}
+
+.card__content {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    flex-grow: 1;
+}
+
+.card__image-wrapper {
+    width: 20%;
+    flex-shrink: 0;
+}
+
+.card__image {
+    overflow: hidden;
+    border-radius: 16px;
+}
+
+.card__text {
+    font-family: serif;
+}
+
+.card__button:hover{
+    background-color: #094B65;
+}
+
+.section {
+    margin: 32px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
