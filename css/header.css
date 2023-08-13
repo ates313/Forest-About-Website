@@ -3,61 +3,66 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    }
+}
 
-    
-    body {
-        overflow-x: hidden;
-        /* background-color: ; */
-        min-height: 100vh;
-    }
 
-    #header {
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 30px 100px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        z-index: 100;
-    }
+body {
+    overflow-x: hidden;
+    /* background-color: ; */
+    min-height: 100vh;
+}
 
-    #header .logo {
-        color: #fff;
-        font-weight: 700;
-        font-size: 2em;
-        text-decoration: none;
-    }
+#header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
 
-    #header ul {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+#header .logo {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em;
+    text-decoration: none;
+    transition: 0.5s;
+}
 
-    #header ul li {
-        list-style: none;
-        margin-left: 20px;
-    }
+#header .logo:hover {
+    color: #73680C;
+}
 
-    #bird1,
-    #bird2,
-    #text {
-        transition: 0.7s;
-    }
+#header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-    #header ul li a {
-        text-decoration: none;
-        padding: 6px 15px;
-        color: #fff;
-        border-radius: 20px;
-        transition: 0.7s;
-    }
+#header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
 
-    #header ul li a:hover,
-    #header ul li a.active {
-        background: #094B65;
-        color: #fff;
-    }
+#bird1,
+#bird2,
+#text {
+    transition: 0.7s;
+}
+
+#header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #fff;
+    border-radius: 20px;
+    transition: 0.7s;
+}
+
+#header ul li a:hover,
+#header ul li a.active {
+    background: #094B65;
+    color: #fff;
+}

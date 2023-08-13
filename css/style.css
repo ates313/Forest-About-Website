@@ -36,6 +36,11 @@ body {
     font-weight: 700;
     font-size: 2em;
     text-decoration: none;
+    transition: 0.5s;
+}
+
+#header .logo:hover{
+    color: #73680C;
 }
 
 #header ul {

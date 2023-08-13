@@ -1,0 +1,265 @@
+body {
+    background-image: url('https://static.vecteezy.com/system/resources/previews/006/466/269/original/nature-outdoor-forest-background-free-vector.jpg');
+    width: 100vw;
+    height: 450px;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: inline-block;
+    position: absolute;
+    top: 200px;
+    left: calc(50% - 160px);
+}
+
+.title {
+    color: #fff;
+    font-size: 18px;
+}
+
+.title-text {
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding: 10px;
+    user-select: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-family: verdana;
+    color: #0083da;
+    text-shadow: 1px 1px 1px #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.title-text:hover {
+    color: #ffcc00;
+}
+
+.title-text img {
+    vertical-align: middle;
+}
+
+.content,
+.link {
+    color: #f1f1f1;
+}
+
+.link a {
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 10px;
+    background: #0083da;
+    border-radius: 6px;
+    user-select: none;
+    border: 1px solid #ccc;
+    transition: all 0.3s;
+}
+
+.link a:hover {
+    background: #ff00cc;
+    top: 1px;
+    position: relative;
+}
+
+.link a:active {
+    color: #1e1e1e;
+}
+
+/* Main Code */
+/* #ContactForm1 {
+  } */
+.ContactForm {
+    position: relative;
+    color: #4f4f50;
+    font-weight: bold;
+    font-family: tahoma;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px #fff;
+    border: 1px solid #0083da;
+    background: linear-gradient(to bottom,
+            #2cf7e3 0%,
+            #d8fbff 40%,
+            #ffffff 58%,
+            #ffffff 81%,
+            #6bfc0a 87%,
+            #00ce06 91%,
+            #c1b400 96%,
+            #ef5b00 100%);
+    overflow: hidden;
+    width: 320px;
+    height: 350px;
+    padding: 10px;
+}
+
+.ContactForm h2 {
+    text-shadow: none !important;
+}
+
+.contact-form-widget {
+    padding: 0 10px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form-name,
+.contact-form-email,
+.contact-form-email-message {
+    max-width: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    font-family: inherit;
+    font-size: 15px;
+    margin: 0;
+    color: #000;
+    background: none;
+    border: none !important;
+    border-bottom: 1px solid #fff !important;
+    outline: none;
+    text-shadow: none;
+    box-shadow: none !important;
+    transition: all 0.3s linear;
+}
+
+.contact-form-email-message {
+    border: 1px solid #fff !important;
+    background: #efefef;
+}
+
+.contact-form-name:hover,
+.contact-form-email:hover,
+.contact-form-name:focus,
+.contact-form-email:focus {
+    background: #ffffff90;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0) !important;
+    border: none !important;
+    position: relative;
+    z-index: +999;
+}
+
+.contact-form-email-message:hover,
+.contact-form-email-message:focus {
+    background: #d7e9a1;
+    border-radius: 10px;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0) !important;
+    position: relative;
+    z-index: +9999;
+}
+
+.contact-form-button-submit {
+    background: #1e1e1e50;
+    backdrop-filter: blur(5px);
+    border-radius: 6px;
+    border: 1px solid #fff !important;
+    display: block;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    padding: 5px;
+    margin: 0 auto;
+    width: 50%;
+    line-height: normal;
+    height: auto;
+    text-decoration: none;
+    text-shadow: 0px 1px 1px #000;
+    transition: all 0.3s ease;
+}
+
+.contact-form-button-submit:hover {
+    background: #d7e9a1 !important;
+    position: relative;
+    z-index: +99999;
+    color: #000;
+    text-shadow: 0px 1px 1px #fff;
+}
+
+.contact-form-button-submit:active {
+    position: relative;
+    top: 1px;
+}
+
+.contact-form-widget .form form>div {
+    max-width: 100% !important;
+    text-shadow: none;
+}
+
+.contact-form-widget .form form>p:first-child:before,
+.contact-form-widget .form form>p:first-child:after,
+.contact-form-widget .form form .contact-form-name~p:before,
+.contact-form-widget .form form .contact-form-name~p:after,
+.contact-form-widget .form form .contact-form-email~p:before,
+.contact-form-widget .form form .contact-form-email~p:after {
+    font-family: fontawesome;
+    position: absolute;
+    max-width: 100% !important;
+    text-shadow: 2px 2px 5px #0000007a;
+    box-shadow: none;
+    text-transform: none;
+    font-weight: normal;
+    border: none;
+}
+
+.contact-form-widget .form form>p:first-child:before {
+    content: "\f1be";
+    color: #ffffff;
+    font-size: 70px;
+    top: 10px;
+    left: -150%;
+    animation: cloud-animation-contact 50s linear infinite;
+}
+
+.contact-form-widget .form form>p:first-child:after {
+    content: "\f0c2";
+    color: #ffffff;
+    font-size: 45px;
+    top: 90px;
+    left: -20%;
+    animation: cloud-animation-contact 52s linear infinite;
+}
+
+.contact-form-widget .form form .contact-form-email+p:before {
+    content: "\f1bb";
+    color: #2e9715;
+    font-size: 80px;
+    bottom: 25px;
+    left: 10px;
+}
+
+.contact-form-widget .form form .contact-form-email+p:after {
+    content: "\f1bb";
+    color: #076e0f;
+    font-size: 115px;
+    bottom: 12px;
+    right: 10px;
+}
+
+.contact-form-widget .form form .contact-form-name+p:before {
+    content: "\f04b";
+    color: #d1c98f;
+    font-size: 150px;
+    bottom: -18px;
+    right: 80px;
+    transform: rotateZ(150deg);
+}
+
+.contact-form- .form form .contact-form-name+p:after {
+    content: "\f04b";
+    color: #fff4a3;
+    font-size: 230px;
+    bottom: -60px;
+    right: -10px;
+    transform: rotateZ(150deg);
+}
+
+@keyframes cloud-animation-contact {
+    from {
+        left: -50%;
+    }
+
+    to {
+        left: 105%;
+    }
+}
